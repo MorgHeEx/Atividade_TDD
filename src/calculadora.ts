@@ -1,15 +1,19 @@
 export function somar(a: number, b: number): number {
-  throw new Error('pendente');
+  return a + b;
 }
 
 export function subtrair(a: number, b: number): number {
-  throw new Error('pendente');
+  return a - b;
 }
 
 export function multiplicar(a: number, b: number): number {
-  throw new Error('pendente');
+  return a * b;
 }
 
 export function dividir(a: number, b: number): number {
-  throw new Error('pendente');
+  if (b === 0) {
+    throw new Error('Divisão por zero');
+  }
+
+  return a / b;
 }
